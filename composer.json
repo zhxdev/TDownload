@@ -1,0 +1,48 @@
+{
+    "name": "zhxdev/tdownload",
+    "description": "Package tiktok downloader",
+    "keywords": [
+        "Zhxdev",
+        "tdownload"
+    ],
+    "homepage": "https://github.com/zhxdev/tdownload",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muh Ezha Syafaat",
+            "email": "muhammadezhasyafaat08@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.36"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zhxdev\\TDownload\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zhxdev\\TDownload\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
